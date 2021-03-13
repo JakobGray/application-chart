@@ -20,7 +20,7 @@ global:
 
 hubconfig:
   nodeSelector: ""
-  replicaCount: 2
+  replicaCount: 1
 
 
 affinity:
