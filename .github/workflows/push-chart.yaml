@@ -20,5 +20,5 @@ jobs:
           token: ${{ secrets.HUB_REPO_TOKEN }}
           repository: JakobGray/multicloudhub-repo
           event-type: chart-change
-          client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
+          client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}", "repository": "${{ github.repository }}"}'
           
