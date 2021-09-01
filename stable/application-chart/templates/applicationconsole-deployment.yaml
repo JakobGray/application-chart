@@ -111,9 +111,9 @@ spec:
         volumeMounts:
         - name: applicationui-certs
           mountPath: /certs
-      {{- if .Values.pullSecret }}
+      {{- if .Values.global.pullSecret }}
       imagePullSecrets:
-      - name: {{ .Values.pullSecret }}
+      - name: {{ .Values.global.pullSecret }}
       {{- end }}
       volumes:
       - name: applicationui-certs

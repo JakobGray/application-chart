@@ -133,9 +133,9 @@ spec:
         volumeMounts:
         - name: uiapi-certs
           mountPath: /opt/app-root/console-api/sslcert
-      {{- if .Values.pullSecret }}
+      {{- if .Values.global.pullSecret }}
       imagePullSecrets:
-      - name: {{ .Values.pullSecret }}
+      - name: {{ .Values.global.pullSecret }}
       {{- end }}
       volumes:
       - name: uiapi-certs
